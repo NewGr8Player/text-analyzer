@@ -36,7 +36,7 @@ def doc_sentiment(_doc):
 def doc_keyword(_doc):
     print('词频')
     for item in xm.keyword(_doc):
-        print(item)
+        print('{0:10s} {1:15f}'.format(item[0], item[1]))
 
 
 # Main method
